@@ -48,11 +48,13 @@ class _JoinScreenState extends State<JoinScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final moonLanding = DateTime.utc(2024, 01, 27).millisecondsSinceEpoch;
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("P2P Call App"),
+        title: Text("P2P Call App $now \n $moonLanding"),
       ),
       body: SafeArea(
         child: Stack(

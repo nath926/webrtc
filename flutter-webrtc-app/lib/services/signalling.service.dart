@@ -27,5 +27,7 @@ class SignallingService {
 
     // connect socket
     socket!.connect();
+
+    print(socket!.id);
   }
 }

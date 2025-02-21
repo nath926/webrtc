@@ -39,7 +39,7 @@ export default function App({}) {
   );
   const otherUserId = useRef(null);
 
-  const socket = SocketIOClient('http://192.168.2.201:3500', {
+  const socket = SocketIOClient('http://192.168.1.56:3500', {
     transports: ['websocket'],
     query: {
       callerId,

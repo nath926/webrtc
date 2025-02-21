@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
 import 'screens/join_screen.dart';
 import 'services/signalling.service.dart';
 
 void main() {
-  // start videoCall app
   runApp(VideoCallApp());
 }
 
@@ -13,7 +13,7 @@ class VideoCallApp extends StatelessWidget {
   VideoCallApp({super.key});
 
   // signalling server url
-  final String websocketUrl = "WEB_SOCKET_SERVER_URL";
+  final String websocketUrl = "http://192.168.1.56:5000";
 
   // generate callerID of local user
   final String selfCallerID =
